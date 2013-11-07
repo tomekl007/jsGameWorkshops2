@@ -218,6 +218,15 @@ var timeOfJump = 0;
 		}
 */
     //collisionMethod(box,grant);
+    /*console.log("grunt.x : " + grant.x);
+    	console.log("box.x : " + box.x);
+    	console.log("grunt.y : " + grant.y);
+    	console.log("box.y : " + box.y);*/
+    if(grant.x > Math.abs(box.x)){
+
+    	console.log("hit");
+    	grant.x = -1000;
+    }
 		stage.update(event);
 
 		//stage.collide(box, grant);
